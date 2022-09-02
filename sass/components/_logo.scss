@@ -1,11 +1,15 @@
 .logo {
-    @include logo-font-style;
-    @include font-size (700, 26px, 1.19, 0.03em);
-    color: $main-logo-color;
+  @include logo-font-style;
+  color: $main-logo-color;
+  @include font-size(700, 24px, 1.17, 0.03em);
+
+  @media screen and (min-width: 1200px) {
+    @include font-size(700, 26px, 1.19, 0.03em);
+  }
 }
 .logo__header {
-    color: $secondary-logo-color;
+  color: $secondary-logo-color;
 }
 .logo__footer {
-    color: $primary-background-color;
+  color: $primary-background-color;
 }
