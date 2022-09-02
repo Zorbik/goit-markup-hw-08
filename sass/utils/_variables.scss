@@ -1,0 +1,40 @@
+$primary-color: #212121;
+$primary-background-color: #fff;
+$secondary-color: #757575;
+$secondary-background-color: #f5f4fa;
+$main-logo-color: #2196f3;
+$secondary-logo-color: #000;
+$footer-background-color: #2f303a;
+$footer-contact-color: rgba(255, 255, 255, 0.6);
+$icon-color: #afb1b8;
+$activities-bg-color: rgba(47, 48, 58, 0.8);
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+@mixin logo-font-style($name: Raleway, $family: sans-serif) {
+  font-family: $name, $family;
+}
+@mixin primary-font-style($name: Roboto, $family: sans-serif) {
+  font-family: $name, $family;
+}
+@mixin font-size($weight, $size, $height, $l-spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $l-spacing;
+}
+
+%hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*:focus-visible {
+  outline: 2px double $main-logo-color;
+  outline-offset: 1.5px;
+}

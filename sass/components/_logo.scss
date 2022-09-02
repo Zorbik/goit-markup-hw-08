@@ -1,0 +1,11 @@
+.logo {
+    @include logo-font-style;
+    @include font-size (700, 26px, 1.19, 0.03em);
+    color: $main-logo-color;
+}
+.logo__header {
+    color: $secondary-logo-color;
+}
+.logo__footer {
+    color: $primary-background-color;
+}

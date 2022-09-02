@@ -1,0 +1,34 @@
+.activities {
+    padding-bottom: 94px;
+}
+.activities__title {
+    margin-bottom: 50px;
+    text-align: center;
+    @include font-size (700, 36px, 1.17, 0.03em)
+}
+.activities__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.activities__product {
+    position: relative;
+    max-height: 294px;
+}
+
+.activities__description {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+
+    @include font-size (700, 14px, 1.17, 0.03em);
+    text-transform: uppercase;
+    color: $primary-background-color;
+    background-color: $activities-bg-color;
+}
