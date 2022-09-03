@@ -13,19 +13,29 @@
   gap: 30px;
 }
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   @include font-size(700, 36px, 1.17, 0.03em);
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid currentColor;
   border-radius: 4px;
-
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
   color: $icon-color;
   transition: color 250ms $timing-function, border-color 250ms $timing-function;
   &:hover,
