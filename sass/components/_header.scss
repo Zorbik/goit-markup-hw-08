@@ -7,31 +7,26 @@
   align-items: center;
   height: 80px;
   justify-content: space-between;
-  @media screen and (min-width: 768px) {
-  }
 }
-.mobile__button {
+.js-open-menu {
   display: inline-flex;
   border: none;
   background-color: transparent;
-  // margin-left: auto;
-  // margin-top: auto;
-  // margin-bottom: auto;
-  & .icon__close {
-    display: none;
-  }
-  &.is__open .icon__close {
-    display: block;
-  }
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
 .mobile__icon {
   width: 40px;
   height: 40px;
   text-align: center;
   vertical-align: middle;
+}
+.navigation {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .navigation__list {
   @media screen and (min-width: 768px) {
@@ -61,6 +56,9 @@
   }
 }
 .contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: auto;
@@ -102,6 +100,7 @@
   vertical-align: middle;
 }
 .current::after {
+  display: none;
   @media screen and (min-width: 768px) {
     content: '';
     position: absolute;

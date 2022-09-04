@@ -33,7 +33,7 @@ body {
   color: $primary-color;
   background-color: $primary-background-color;
   @include primary-font-style;
-  &.modal-open {
+  &.modal__open {
     overflow: hidden;
   }
 }

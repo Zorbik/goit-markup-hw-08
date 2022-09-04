@@ -1,0 +1,81 @@
+.menu__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 40px;
+  background-color: $primary-background-color;
+  z-index: 999;
+
+  transform: translateY(-100%);
+  transition: transform 250ms $timing-function;
+}
+
+.menu__container.is__open {
+  transform: translateY(0);
+}
+
+.menu__container .menu__toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.menu {
+  margin-bottom: auto;
+  list-style: none;
+  @include font-size(500, 40px, 1.18, 0.02em);
+}
+
+.menu__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.menu__link {
+  &:hover,
+  &:focus,
+  &.current {
+    color: $main-logo-color;
+  }
+  transition: color 250ms $timing-function;
+}
+.contmenu {
+  display: block;
+  margin-bottom: 64px;
+}
+.contmenu__item {
+  color: $secondary-color;
+  @include font-size(500, 24px, 1.17, 0.02em);
+  margin-bottom: 32px;
+  &:hover,
+  &:focus {
+    @include font-size(500, 34px, 1.18, 0.02em);
+    color: $main-logo-color;
+  }
+  transition: color 250ms $timing-function, font-size 250ms $timing-function;
+}
+
+.mobsocials__item {
+  display: inline-block;
+  @include font-size(500, 18px, 1.22, 0.02em);
+  color: $main-logo-color;
+  &:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+.icon__close {
+  &:hover {
+    fill: $main-logo-color;
+  }
+  transition: fill 250ms $timing-function;
+}
