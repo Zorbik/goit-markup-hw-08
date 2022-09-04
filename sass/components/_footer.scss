@@ -109,7 +109,11 @@
 }
 
 .subscribe__input {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 479px) {
+    width: 80vw;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
     margin-bottom: 20px;
   }

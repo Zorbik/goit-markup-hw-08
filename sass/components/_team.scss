@@ -32,18 +32,6 @@
 
 .team__img {
   margin-bottom: 30px;
-  // @media screen and (min-width: 480px) {
-  //   width: 450px;
-  //   height: auto;
-  // }
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 374px;
-  }
-  // @media screen and (min-width: 1200px) {
-  //   width: 270px;
-  //   height: auto;
-  // }
 }
 
 .team__list {
@@ -58,6 +46,7 @@
   border-bottom-right-radius: 4px;
   padding-bottom: 24px;
   @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 4);
     padding-bottom: 30px;
   }
 

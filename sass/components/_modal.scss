@@ -2,9 +2,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-
-  height: 581px;
-  width: 528px;
+  width: 100vw;
+  height: 90%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 581px;
+    width: 528px;
+  }
   border-radius: 4px;
   padding: 40px;
 
@@ -46,14 +53,17 @@
 }
 
 .modal__title {
-  @include font-size(700, 20px, 1.15, 0.03em);
+  @include font-size(700, 20px, 1.5, 0.03em);
   text-align: center;
   color: $primary-color;
   margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form {
-  width: 448px;
+  width: 100%;
 }
 
 .form__item {
@@ -128,12 +138,16 @@
 
 .checkbox__label {
   display: flex;
-  @include font-size(400, 14px, 1.71, 0.03em);
+  @include font-size(400, 12px, 1.17, 0.03em);
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   color: $secondary-color;
   gap: 5px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__terms {
