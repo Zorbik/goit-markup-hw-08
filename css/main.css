@@ -369,19 +369,19 @@ button {
 }
 
 .current::after {
-  display: none;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 110%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .current::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 110%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #2196f3;
+    display: none;
   }
 }
 
