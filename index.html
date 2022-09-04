@@ -18,9 +18,15 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html">Web<span class="logo__header">Studio</span></a>
-        <button type="button">
-          <svg>
-            <use></use>
+        <button
+          type="button"
+          class="mobile__button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile__icon" aria-label="перемикач мобільного меню">
+            <use class="icon__menu" href="./images/icons.svg#icon-menu"></use>
+            <use class="icon__close" href="./images/icons.svg#icon-close__menu"></use>
           </svg>
         </button>
         <nav class="navigation">
@@ -760,7 +766,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-backdrop>
+    <div class="backdrop is__hidden" data-backdrop>
       <div class="modal">
         <button
           data-close-modal
@@ -841,7 +847,24 @@
         </form>
       </div>
     </div>
-
+    <!-- <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div></div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

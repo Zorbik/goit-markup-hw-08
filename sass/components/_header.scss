@@ -5,17 +5,46 @@
 .header__container {
   display: flex;
   align-items: center;
+  height: 80px;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+  }
 }
-
+.mobile__button {
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  // margin-left: auto;
+  // margin-top: auto;
+  // margin-bottom: auto;
+  & .icon__close {
+    display: none;
+  }
+  &.is__open .icon__close {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile__icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
 .navigation__list {
-  display: flex;
-  @include font-size(500, 14px, 1.14, 0.02em);
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    @include font-size(500, 14px, 1.14, 0.02em);
+    margin-left: 93px;
+  }
 }
 .navigation__link {
-  display: inline-block;
-  padding: 32px 0;
-
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    padding: 32px 0;
+  }
   transition: color 250ms $timing-function;
 
   &:hover,
@@ -24,15 +53,19 @@
   }
 }
 .navigation__item {
-  position: relative;
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 .contacts {
-  display: block;
-  margin-left: auto;
-  @include font-size(500, 12px, 1.17, 0.02em);
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    @include font-size(500, 12px, 1.17, 0.02em);
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     font-size: 14px;
@@ -69,13 +102,15 @@
   vertical-align: middle;
 }
 .current::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 110%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $main-logo-color;
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 110%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $main-logo-color;
+  }
 }
