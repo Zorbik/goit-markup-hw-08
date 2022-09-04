@@ -116,37 +116,91 @@
           <ul class="activities__list">
             <li class="activities__item">
               <div class="activities__product">
-                <img
-                  class="activities__img"
-                  src="./images/desktop-solutions.jpg"
-                  alt="Десктопні додатки"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-solutions.webp    370w,
+                      ./images/desktop-solutions@2x.webp 740w
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop-solutions.jpg    370w,
+                      ./images/desktop-solutions@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="activities__img"
+                    src="./images/desktop-solutions.jpg"
+                    alt="Десктопні додатки"
+                    width="370"
+                  />
+                </picture>
+
                 <p class="activities__description">Десктопні додатки</p>
               </div>
             </li>
             <li class="activities__item">
               <div class="activities__product">
-                <img
-                  class="activities__img"
-                  src="./images/mobile-applications.jpg"
-                  alt="Мобільні додатки"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile-applications.webp    370w,
+                      ./images/mobile-applications@2x.webp 740w
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-applications.jpg    370w,
+                      ./images/mobile-applications@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="activities__img"
+                    src="./images/mobile-applications.jpg"
+                    alt="Мобільні додатки"
+                    width="370"
+                  />
+                </picture>
                 <p class="activities__description">Мобільні додатки</p>
               </div>
             </li>
             <li class="activities__item">
               <div class="activities__product">
-                <img
-                  class="activities__img"
-                  src="./images/design-solutions.jpg"
-                  alt="Дизайнерські рішення"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/design-solutions.webp    370w,
+                      ./images/design-solutions@2x.webp 740w
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/design-solutions.jpg    370w,
+                      ./images/design-solutions@2x.jpg 740w
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="activities__img"
+                    src="./images/design-solutions.jpg"
+                    alt="Дизайнерські рішення"
+                    width="370"
+                  />
+                </picture>
                 <p class="activities__description">Дизайнерські рішення</p>
               </div>
             </li>
@@ -847,7 +901,7 @@
       </div>
     </div>
 
-    <div class="menu__container js-menu-container" id="mobile-menu"">
+    <div class="menu__container js-menu-container" id="mobile-menu">
       <button type="button" class="menu__toggle js-close-menu">
         <svg class="mobile__icon" aria-label="мобільне меню">
           <use class="icon__close" href="./images/icons.svg#icon-close__menu"></use>
@@ -866,21 +920,25 @@
 
       <ul class="contmenu">
         <li class="contmenu__item">
-          <a class="contmenu__link" href="mailto:info@devstudio.com">
-            info@devstudio.com</a
-          >
+          <a class="contmenu__link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
         </li>
         <li class="contmenu__item">
-          <a class="contmenu__link" href="tel:+380961111111">
-            +38 096 111 11 11</a
-          >
+          <a class="contmenu__link" href="tel:+380961111111"> +38 096 111 11 11</a>
         </li>
       </ul>
       <ul class="mobsocials">
-        <li class="mobsocials__item"><a href="https://instagram.com/" class="mobsocials__link">Instagram</a></li>
-        <li class="mobsocials__item"><a href="https://twitter.com/" class="mobsocials__link">Twitter</a></li>
-        <li class="mobsocials__item"><a href="https://facebook.com/" class="mobsocials__link">Facebook</a></li>
-        <li class="mobsocials__item"><a href="https://linkedin.com/" class="mobsocials__link">LinkedIn</a></li>
+        <li class="mobsocials__item">
+          <a href="https://instagram.com/" class="mobsocials__link">Instagram</a>
+        </li>
+        <li class="mobsocials__item">
+          <a href="https://twitter.com/" class="mobsocials__link">Twitter</a>
+        </li>
+        <li class="mobsocials__item">
+          <a href="https://facebook.com/" class="mobsocials__link">Facebook</a>
+        </li>
+        <li class="mobsocials__item">
+          <a href="https://linkedin.com/" class="mobsocials__link">LinkedIn</a>
+        </li>
       </ul>
     </div>
 
