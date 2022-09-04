@@ -1,6 +1,6 @@
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 h1,
@@ -10,31 +10,34 @@ p,
 ul,
 li,
 a {
-    margin: 0;
-    border-width: 0;
-    padding: 0;
+  margin: 0;
+  border-width: 0;
+  padding: 0;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 address {
-    font-style: normal;
+  font-style: normal;
 }
 button {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 body {
-    color: $primary-color;
-    background-color: $primary-background-color;
-    @include primary-font-style;
+  color: $primary-color;
+  background-color: $primary-background-color;
+  @include primary-font-style;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }

@@ -194,6 +194,9 @@ body {
   background-color: #fff;
   font-family: Roboto, sans-serif;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 button {
   cursor: pointer;
@@ -1051,6 +1054,7 @@ button {
   left: 50%;
   width: 100vw;
   height: 90%;
+  overflow-y: scroll;
   border-radius: 4px;
   padding: 40px;
   background-color: #fff;
