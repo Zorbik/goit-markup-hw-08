@@ -12,13 +12,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   opacity: 1;
+  overflow-y: scroll;
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
   }
-  @media screen and (min-width: 150vh) and (max-height: 609px) {
-    top: calc(50% + 70px);
-    overflow-y: scroll;
+  @media screen and (orientation: landscape) and (max-height: 609px) {
+    top: 0;
+    transform: translate(-50%, 0);
   }
   @media screen and (min-width: 1200px) {
     height: 581px;
