@@ -10,9 +10,10 @@
 
 .team__title {
   margin-bottom: 30px;
-  @include font-size(700, 36px, 1.17, 0.03em);
+  @include font-size(700, 28px, 1.18, 0.03em);
   text-align: center;
   @media screen and (min-width: 1200px) {
+    @include font-size(700, 36px, 1.17, 0.03em);
     margin-bottom: 50px;
   }
 }

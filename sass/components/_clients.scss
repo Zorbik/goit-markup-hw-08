@@ -14,19 +14,14 @@
 }
 .clients__title {
   margin-bottom: 30px;
-  @include font-size(700, 36px, 1.17, 0.03em);
+  @include font-size(700, 28px, 1.18, 0.03em);
   text-align: center;
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    @include font-size(700, 36px, 1.17, 0.03em);
   }
 }
 .clients__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 92px;
-  border: 1px solid currentColor;
-  border-radius: 4px;
   @media screen and (max-width: 767px) {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -36,12 +31,20 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 5 * 30px) / 6);
   }
-  color: $icon-color;
-  transition: color 250ms $timing-function, border-color 250ms $timing-function;
+}
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
   &:hover,
   &:focus {
     color: $main-logo-color;
   }
+  color: $icon-color;
+  transition: color 250ms $timing-function, border-color 250ms $timing-function;
 }
 
 .clients__icon {

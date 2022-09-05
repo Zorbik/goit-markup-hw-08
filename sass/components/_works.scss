@@ -7,24 +7,24 @@
   padding-bottom: 94px;
 }
 .portfolio__filters {
-  @media screen and (max-width: 767px) {
-    justify-content: start;
-    margin-bottom: 40px;
-    width: 330px;
-  }
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
+  margin-bottom: 33px;
+  gap: 8px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 .portfolio__item {
   @media screen and (max-width: 767px) {
-    &:nth-child(n + 4) {
-      margin-top: 15px;
-    }
-  }
-  &:not(:last-child) {
-    margin-right: 8px;
+    margin-bottom: 7px;
   }
 }
 .portfolio__title {
