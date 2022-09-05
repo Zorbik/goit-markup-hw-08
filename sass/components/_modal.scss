@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   width: 100vw;
-  height: 90vh;
+  height: 609px;
   border-radius: 4px;
   padding: 40px;
   transform: translate(-50%, -50%);
@@ -144,6 +144,7 @@
   @include font-size(400, 12px, 1.17, 0.03em);
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   color: $secondary-color;
   gap: 5px;
