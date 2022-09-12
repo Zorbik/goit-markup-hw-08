@@ -209,17 +209,17 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479.98px) {
   .container {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .container {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .container {
     width: 1200px;
   }
@@ -233,7 +233,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .logo {
     font-weight: 700;
     font-size: 26px;
@@ -266,7 +266,7 @@ button {
   border: none;
   background-color: transparent;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .js-open-menu {
     display: none;
   }
@@ -279,13 +279,13 @@ button {
   vertical-align: middle;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .navigation {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .navigation__list {
     display: flex;
     font-weight: 500;
@@ -299,7 +299,7 @@ button {
 .navigation__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .navigation__link {
     display: inline-block;
     padding: 32px 0;
@@ -309,7 +309,7 @@ button {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .navigation__item {
     position: relative;
   }
@@ -318,12 +318,12 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .contacts {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .contacts {
     display: block;
     margin-left: auto;
@@ -333,7 +333,7 @@ button {
     letter-spacing: 0.02em;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .contacts {
     display: flex;
     font-size: 14px;
@@ -341,7 +341,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .contacts__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -356,7 +356,7 @@ button {
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .contacts__link {
     display: inline-block;
     padding: 32px 0;
@@ -380,7 +380,7 @@ button {
   border-radius: 2px;
   background-color: #2196f3;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .current::after {
     display: none;
   }
@@ -401,12 +401,12 @@ button {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-background-img-mobile@2x.jpg");
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 479.98px) and (max-width: 767.98px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-background-img-tablet.jpg");
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 479.98px) and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 479.98px) and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (min-width: 479.98px) and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-background-img-tablet@2x.jpg");
   }
@@ -421,7 +421,7 @@ button {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-background-img-desktop@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .hero {
     height: 600px;
   }
@@ -436,7 +436,7 @@ button {
   line-height: 1.62;
   letter-spacing: 0.06em;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .hero__title {
     font-weight: 900;
     font-size: 44px;
@@ -458,7 +458,7 @@ button {
   color: #fff;
   background-color: #2196f3;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .hero__button {
     width: 216px;
   }
@@ -468,7 +468,7 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .advantages {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -484,7 +484,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .advantages__subtitle {
     text-align: left;
   }
@@ -508,17 +508,17 @@ button {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479.98px) {
   .advantages__item {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .advantages__item {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .advantages__item {
     width: calc((100% - 90px) / 4);
   }
@@ -550,7 +550,7 @@ button {
 .activities {
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .activities {
     display: none;
   }
@@ -599,7 +599,7 @@ button {
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -614,7 +614,7 @@ button {
   letter-spacing: 0.03em;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .team__title {
     font-weight: 700;
     font-size: 36px;
@@ -662,7 +662,7 @@ button {
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .team__item {
     flex-basis: calc((100% - 90px) / 4);
     padding-bottom: 30px;
@@ -700,7 +700,7 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -722,7 +722,7 @@ button {
   letter-spacing: 0.03em;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .clients__title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -732,17 +732,17 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .clients__item {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .clients__item {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .clients__item {
     flex-basis: calc((100% - 150px) / 6);
   }
@@ -771,7 +771,7 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -785,20 +785,20 @@ button {
   margin-bottom: 33px;
   gap: 8px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .portfolio__filters {
     margin-bottom: 30px;
     justify-content: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .portfolio__filters {
     margin-bottom: 50px;
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .portfolio__item {
     margin-bottom: 7px;
   }
@@ -822,12 +822,12 @@ button {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479.98px) {
   .works__item {
     flex-basis: 100%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .works__item {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -835,7 +835,7 @@ button {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .works__item {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -926,14 +926,14 @@ button {
   align-items: baseline;
   gap: 60px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .footer__container {
     justify-content: center;
     flex-wrap: wrap;
@@ -941,7 +941,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__contacts {
     display: flex;
     flex-direction: column;
@@ -958,7 +958,7 @@ button {
 .address__item:not(:first-child) {
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .address__item {
     display: flex;
     justify-content: center;
@@ -990,7 +990,7 @@ button {
   margin-bottom: 20px;
   color: #fff;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__title,
 .subscribe__title {
     text-align: center;
@@ -1023,7 +1023,7 @@ button {
   fill: #fff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe {
     display: flex;
     flex-direction: column;
@@ -1034,7 +1034,7 @@ button {
 .subscribe__area {
   display: flex;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe__area {
     flex-direction: column;
     align-items: center;
@@ -1050,13 +1050,13 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479.98px) {
   .subscribe__input {
     width: 80vw;
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 479.98px) and (max-width: 1199.98px) {
   .subscribe__input {
     width: 450px;
     margin-bottom: 20px;
@@ -1079,7 +1079,7 @@ button {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe__button {
     margin-left: 0;
   }
@@ -1127,7 +1127,7 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479.98px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1139,7 +1139,7 @@ button {
     transform: translate(-50%, 0);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .modal {
     height: 581px;
     width: 528px;
@@ -1181,7 +1181,7 @@ button {
   color: #212121;
   margin-bottom: 12px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .modal__title {
     line-height: 1.15;
   }
@@ -1276,7 +1276,7 @@ button {
   color: #757575;
   gap: 5px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .checkbox__label {
     font-size: 14px;
     line-height: 1.71;
@@ -1357,7 +1357,7 @@ button {
   line-height: 1.18;
   letter-spacing: 0.02em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .menu {
     display: none;
   }
@@ -1378,7 +1378,7 @@ button {
   display: block;
   margin-bottom: 64px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .contmenu {
     display: none;
   }
@@ -1401,7 +1401,7 @@ button {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .mobsocials {
     display: none;
   }

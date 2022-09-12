@@ -7,19 +7,19 @@
   display: flex;
   align-items: baseline;
   gap: 60px;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     justify-content: center;
     flex-wrap: wrap;
     gap: 93px;
   }
 }
 .footer__contacts {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@
   &:not(:first-child) {
     color: $footer-contact-color;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop) {
     display: flex;
     justify-content: center;
   }
@@ -54,7 +54,7 @@
 }
 .footer__title,
 .subscribe__title {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop) {
     text-align: center;
   }
   @include font-size(700, 14px, 1.17, 0.03em);
@@ -94,7 +94,7 @@
   fill: #fff;
 }
 .subscribe {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -102,18 +102,18 @@
 }
 .subscribe__area {
   display: flex;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop) {
     flex-direction: column;
     align-items: center;
   }
 }
 
 .subscribe__input {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: $mobile) {
     width: 80vw;
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: $mobile) and (max-width: $desktop) {
     width: 450px;
     margin-bottom: 20px;
   }
@@ -127,7 +127,7 @@
 }
 
 .subscribe__button {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop) {
     margin-left: 0;
   }
   display: flex;
